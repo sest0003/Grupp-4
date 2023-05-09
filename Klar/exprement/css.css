@@ -1,0 +1,89 @@
+.h2{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.status{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color:rgb(217, 217, 217);
+}
+ html{
+    font-size: 20px;
+ }
+ .error{
+    color: rgb(12, 5, 103);
+ }
+ .button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+ }
+.accountCreation{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.errorMessage{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font: 35px;
+}
+.toggle-password{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+body {
+    background-image: url(pexels-photo-531880.jpeg);
+  }
+
+  
+
+  .blue
+  {
+   color: blue;
+  }
+  .blue2
+  {
+   color: blue;
+  }
+  .red
+  {
+   color: red;
+  }
+
+.green{
+   color: green;
+}
+.pink{
+   color: pink;
+}
+.violet{
+   color: violet;
+}
+.yellow{
+   color:yellow;
+} 
+
+
+  
+
+
+/*.rosso{color:red;}
+.grigio{color:grey;}
+.oro{color:gold;}
+.fucsia{color:fuchsia;}
+.verde{color:green;}
+.giallo{color: yellow;}
+.rosa{color:pink;}
+
+
+
+

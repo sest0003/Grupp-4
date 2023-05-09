@@ -1,0 +1,54 @@
+.h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    opacity: 50%;
+}
+.status{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: aliceblue;
+    padding: 30px;
+    margin: auto;
+    border-radius: 24px;
+}
+ html{
+    font-size: 20px;
+ }
+ .error{
+    color: red;
+ }
+ .button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+ }
+.accountCreation{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.errorMessage{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font: 35px;
+}
+.toggle-password{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.outside{
+    background-color: rgb(183, 221, 209);
+    padding: 50px;
+}
+.addBorder{
+    background-color:rgb(183, 221, 209)
+}
+
+

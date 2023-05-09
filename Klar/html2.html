@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+    
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+        
+</head>
+
+
+
+
+<body onload="defaultColor()">
+
+<div class="container2"  id="container2">
+    <div class="container">
+        
+        <form class="form-floating mb-3">
+
+           
+            <h2 class="h2">
+          
+                <p class="pp" class="blue" id="blue"> C</p>
+                <p class="pp" class="red" id="red">R</p>
+                <p class="pp" class="yellow" id="yellow">E</p>
+                <p class="pp" class="orange" id="orange">A</p>
+                <p class="pp" class="violet" id="violet">T</p>
+                <p class="pp" class="peru" id="peru">E</p>
+                &nbsp; &nbsp;
+                <p class="pp" class="fucsia" id="dd">A</p>
+                <p class="yellow2" id="yellow2">CC</p>
+                <p class="pp" class="fucsia2" id="dd2">OUNT</p>
+              
+            </h2>
+
+        </form>
+        <form class="form-floating mb-3">
+            <input type="text" class="form-control username" id="username" onkeyup="blueC()" placeholder=""value="">
+            <label for="floatingInputInvalid">Username</label>
+
+           
+        </form>
+
+
+        <form class="form-floating  mb-4">
+            <input type="email" class="form-control email" id="email" placeholder=""
+                onkeyup="validEmail(); redR();" value="">
+            <label for="floatingInputInvalid">Email</label>
+        </form>
+        <h6 class="status"></h6>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-floating  mb-5">
+                    <input type="password" class="form-control" id="password" placeholder="Password" onkeyup="validPassword(); yellowY();">
+                    <label for="floatingPassword">Password</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-floating  mb-5">
+                    <input type="password" class="form-control" id="passwordAgain" placeholder="Password" onkeyup="validPassword(); orangeO();">
+                    <label for="floatingPassword">Enter password again</label>
+                </div>
+            </div>
+            <div class="toggle-password">
+                <button type="button" class="btn btn-dark" id="showpassword" onclick="togglePassword()">Show Password</button>
+
+            </div>
+            <div class="errorMessage">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <select class="form-select" aria-label="Default select example" id="country-form" onclick="violetV()">
+                        <label for="country-form">Confirm</label>
+                        <option selected>Country</option>
+                        <option value="1">Sweden</option>
+                        <option value="2">UK</option>
+                        <option value="3">France</option>
+                        <option value="4">Italy</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <select class="form-select" aria-label="Default select example" id="language-form" onclick="peruP()">
+                    <label for="country-form">Confirm</label>
+                       <option selected>Language</option>
+                        <option value="1">Swedish</option>
+                        <option value="2">English</option>
+                        <option value="3">French</option>
+                        <option value="4">Italian</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <select class="form-select" aria-label="Default select example" id="cash" onclick="accountC()">
+                        <option selected>Currency</option>
+                        <label for="cash-form">Confirm</label>
+                        <option value="1">SEK - Swedish Kronor</option>
+                        <option value="2">EU - Euro</option>
+                        <option value="3">Pounds - Brittish Pounds</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        
+        <h2 class="h2" > 
+            <p class="spex" id="spex"> PERSONAL </p>
+                 </h2>
+    
+
+        <div class="row">
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input type="input" class="form-control" id="firstName" placeholder="Name" value="" onkeyup="personal()">
+                    <label for="floatingInputInvalid">Name</label>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input placeholder="Lastname" type="input" class="form-control" id="lastName"  value="">
+                    <label for="floatingInputInvalid">Lastname</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <select class="form-select" aria-label="Default select example" id="birthyears">
+                        <option selected>Birth Year</option>
+                        <option value="1">Swedish</option>
+                        <option value="2">French</option>
+                        <option value="3">Italian</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+
+
+                    </select>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Date</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input type="input" class="form-control" id="street" placeholder="Street" value="">
+                    <label for="floatingInputInvalid">Street</label>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input type="input" class="form-control" id="form-select" placeholder="Building" value="">
+                    <label for="floatingInputInvalid">Building</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input type="input" class="form-control" id="region" placeholder="Region (Optional)" value="">
+                    <label for="floatingInputInvalid">Region</label>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input type="input" class="form-control" id="city" placeholder="Town/City" value="">
+                    <label for="floatingInputInvalid">City</label>
+                </form>
+            </div>
+            <div class="col">
+                <form class="form-floating mb-5">
+                    <input type="input" class="form-control" id="postalCode" placeholder="Postal Code" value="">
+                    <label for="floatingInputInvalid">Postal Code</label>
+                </form>
+            </div>
+        </div>
+        <div class="accountCreation">
+            
+        </div>
+
+     
+
+        <div class="button">
+        <button type="button" class="btn btn-dark" onclick="createAccount()">Create Account</button>
+        </div>
+
+        <div class="container">
+        <button class="slidein">OK</button>
+         </div>
+
+    </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="javas.js"></script>
+</body>
+
+</html>

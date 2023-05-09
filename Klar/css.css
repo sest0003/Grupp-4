@@ -1,0 +1,145 @@
+
+body{
+    background-color: rgb(69, 70, 40);
+
+}
+
+.h2{
+    font-family: 'Bungee Inline', cursive;
+    
+    display: flex; 
+   
+    font color: #000;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border
+}
+.status{
+    display: flex;
+    justify-content: center;
+    position: relative bottom;
+    margin-top: 20%;
+    justify-content:space-evenly;
+    width: 50px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    color: #90c5a0;
+   
+}
+.container{
+    background-color:rgb(217, 217, 217);
+}
+ html{
+    font-size: 20px;
+ }
+ .error{
+    color: rgb(206, 0, 0);
+ }
+ .button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+ }
+.accountCreation{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.errorMessage{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font: 35px;
+}
+.toggle-password{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+body {
+    background-image: url(pexels-photo-531880.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ 
+}
+  
+.blue { color: rgb(0, 0, 0); }
+.blue { color: blue; }
+
+.red { color: rgb(231, 131, 131);}
+
+.yellow{color: yellow;}
+
+.orange{color: orange;}
+
+.violet{color: rgb(191, 99, 191);}
+
+.peru{color: hwb(23 60% 34%);}
+
+.fucsia{color:rgb(242, 42, 75)}  
+
+.fucsia2{color:rgb(200, 150, 35)}  
+
+.yellow2{ color: yellow;}
+
+.spex{
+    color:  rgb(231, 131, 131);
+    font-size: 200%;
+}
+
+
+.container2{
+    background-image: url(photo-1414609245224-afa02bfb3fda.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+    .pp {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 150%;
+
+
+    }
+
+.container {
+    animation: slideMe .7s ease-in ;
+    background-color: blanchedalmond;
+    color: black
+}
+
+    @keyframes slideMe {
+        0% {
+            transform: translateX(-5000px);
+        }
+
+        62% {
+            transform: translateX(-20px);
+        }
+        72% {
+            transform: translateX(10px);
+        }
+       
+        100% {
+            transform: translateX(center);
+        }
+
+        
+    }
+    
+    
+
+
+      
+
+
+
+
+
+
+
+
+
+
